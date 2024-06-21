@@ -1,4 +1,5 @@
 import { useAccount, useDisconnect } from "wagmi";
+import Logo from "../assets/logo.svg";
 
 export default function Header() {
   const account = useAccount();
@@ -13,9 +14,9 @@ export default function Header() {
           <div className="flex flex-col px-6 py-6 lg:flex-row lg:items-center lg:justify-between lg:px-10 lg:py-4 xl:px-20">
             <a href="#">
               <img
-                src={"/assets/logo.png"}
-                alt=""
-                className="inline-block max-h-6"
+                src={Logo}
+                alt="Trust Wallet"
+                className="inline-block w-36"
               />
             </a>
             {account.status === "connected" && (
