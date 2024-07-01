@@ -17,7 +17,7 @@ export const ENVS = {
 };
 
 export const publicClient = createPublicClient({
-  transport: http("https://rpc.ankr.com/eth_sepolia"),
+  transport: http("https://1rpc.io/sepolia"),
 });
 
 export const paymasterClient = createPimlicoPaymasterClient({
